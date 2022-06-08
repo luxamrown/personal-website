@@ -5,7 +5,7 @@ import NavPage from '../../components/navbar'
 export default function AboutPage() {
   return (
     <>
-      <Layout>
+      <Layout pageTitle={"About"}>
         <About />
       </Layout>
     </>

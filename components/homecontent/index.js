@@ -1,11 +1,17 @@
 import {Container, Row, Col} from 'react-bootstrap'
 import Image from 'next/image'
 import { useMediaQuery } from "react-responsive";
+import Head from 'next/head'
 
 export default function HomeContent() {
     const isMobile = useMediaQuery({maxWidth:464})
   return (
     <>
+    <Head>
+        <title>
+        Mohamad El Abror | Home
+        </title>
+    </Head>
         <Container className='my-5'>
             <Row>
                 <Col lg>
