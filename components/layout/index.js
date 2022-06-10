@@ -12,10 +12,12 @@ export default function Layout({children, pageTitle}) {
           Mohamad El Abror | {pageTitle}
         </title>
       </Head>
-      <Container fluid>
-          <NavPage/>
-          <div>{children}</div>
-          <Footer/>
+      <NavPage/>
+      <Container className="containers" fluid>
+          <div>
+            {children}
+          </div>
+        <Footer/>
       </Container>
     </>
   )

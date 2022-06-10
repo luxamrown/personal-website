@@ -1,10 +1,10 @@
 import {Container, Row, Col} from 'react-bootstrap'
 import Image from 'next/image'
-import { useMediaQuery } from "react-responsive";
 import Head from 'next/head'
+import useDimension from '../../utils';
 
 export default function HomeContent() {
-    const isMobile = useMediaQuery({maxWidth:464})
+    const isMobile = useDimension(768)
   return (
     <>
     <Head>
@@ -23,7 +23,7 @@ export default function HomeContent() {
                     />
                 </Col>
                 <Col lg>
-                    <div className={'home-text ' + (isMobile?'':'home-text-mobile')}>
+                    <div className={'home-text animation-text ' + (isMobile?'':'home-text-mobile')}>
                         <h3 className='text-center'>Hello!</h3>
                         <br></br>
                         <p>My name is El-Abror, currently i am a trainee at Enigmacamp. I learned

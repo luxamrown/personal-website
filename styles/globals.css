@@ -5,7 +5,8 @@
 
 body {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  height: 100%;
 }
 
 a {
@@ -17,17 +18,23 @@ a {
   box-sizing: border-box;
 }
 
-/* #__next {
+#__next {
   height: 100%;
-} */
+}
 
 /* custom */
+.nav-desktop{
+  flex: end;
+  justify-content: end;
+}
+
 .nav-text{
   border-bottom: 1px solid transparent;
   transition: 0.3s !important;
 }
 
 .nav-text-active{
+  color: black !important;
   border-bottom: 1px solid rgb(66, 66, 66);
 }
 
@@ -35,34 +42,41 @@ a {
   border-bottom: 1px solid rgb(66, 66, 66);
 }
 
-.home-text{
+
+@keyframes showing {
+  0% {color: transparent;left: 25px; }
+  100% {left: 0px;}
+}
+
+.animation-text{
   position: relative;
-  animation-name: text-home;
+  animation-name: showing;
   animation-duration: 1s;
 }
 
-@keyframes text-home {
-  0% {color: transparent;left: 25px;}
-  100% {left: 0px;}
+.home-text{
+  position: relative;
+  animation-duration: 1s;
 }
 
 .home-text-mobile{
   margin-top: 20vh;
 }
 
-.carousel-photo{
-  text-align: center;
-  width: 960px;
-  height: 640px;
-  max-height: 640px !important;
-  left: 150px;
-  top: 100px;
-  transform: scale(1.6);
-  object-fit: cover;
+.content{
+  margin-bottom: 91px;
 }
 
-.footer{
-  margin-top: 380px;
+.containers{
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+
+.footer {
   height: 91px;
+  position: absolute;
+  left: 0;  
 }
 
