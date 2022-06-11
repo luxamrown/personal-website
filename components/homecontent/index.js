@@ -14,12 +14,12 @@ export default function HomeContent() {
     </Head>
         <Container className='my-5'>
             <Row>
-                <Col lg>
+                <Col lg className='animation-text-right'>
                     <Image 
                     src={"/images/avatar-noshadow.png"} 
                     width="462px" height={"509px"} 
                     alt='avatar' quality={100} 
-                    className={"border-bottom"} 
+                    className={"border-bottom "} 
                     />
                 </Col>
                 <Col lg>

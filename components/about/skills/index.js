@@ -35,6 +35,9 @@ export default function Skills(){
   },{
     title:'Indesign',
     img:'/images/about/application/Adobe_InDesign_CC_icon.svg'
+  },{
+    title:'Figma',
+    img:'/images/about/application/icon figma vector.svg'
   }
   ]
   

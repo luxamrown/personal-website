@@ -22,7 +22,7 @@ export default function NavPage() {
                     <Nav className="m-5 text-center">
                         <Nav.Link href="/" className={"mx-4 " +(router.pathname === '/'?'nav-text-active':'nav-text')}><h5>Home</h5></Nav.Link>
                         <Nav.Link href="/about" className={"mx-4 " +(router.pathname === '/about'?'nav-text-active':'nav-text')}><h5>About</h5></Nav.Link>
-                        <Nav.Link href="/portofolio" className={"mx-4 " +(router.pathname === '/portofolio'?'nav-text-active':'nav-text')}><h5>Portofolio</h5></Nav.Link>
+                        <Nav.Link href="/portofolio" className={"mx-4 " +(router.pathname === '/portfolio'?'nav-text-active':'nav-text')}><h5>Portfolio</h5></Nav.Link>
                         <Nav.Link href="/blog" className={"mx-4 " +(router.pathname === '/blog'?'nav-text-active':'nav-text')}><h5>Blog</h5></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

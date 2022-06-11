@@ -1,26 +1,16 @@
-import {Col, Row, Container} from 'react-bootstrap'
+import { useRouter } from 'next/dist/client/router'
+import { Button } from 'react-bootstrap'
+
 export default function Portofolio() {
+  const router = useRouter()
+  const handleRenderPage = () =>{
+    router.push('/portofolio/' + '/renders')
+  }
+
   return (
-    <>
-      <Container className='border-bottom containers-content'>
-      <Col className='my-5'>
-        <Row className='text-center'>
-          <h2>Portofolio</h2>
-        </Row>
-      </Col>
-      <Col>
-        <Row >
-          <h4>About Me</h4>
-          <p>I was born and live in Jakarta. I learn some skills like Design, 3D modeling
-              and Programming. I also like football, workout, playing guitar, history,
-                trains, aviation
-          </p>
-          <br />
-          <p>I just graduated from SMA 6 Jakarta in 2021. after that, i took part in an information technology bootcamp called Enigmacamp.</p>
-          <p></p>
-        </Row>
-      </Col>
-      </Container>
-    </>
+    <div className='text-center portfolio-crossing'>
+        <Button onClick={handleRenderPage} variant="outline-light text-secondary border-0 border-start border-end portfolio-crossing-text m-2" className='animation-text-right'>3D Renders</Button>
+        <Button variant="outline-light border-0 border-start border-end portfolio-crossing-text m-2" className='animation-text'><a className='text-decoration-none text-secondary' rel='noreferrer' target="_blank" href="https://github.com/luxamrown">Code</a></Button>
+    </div>
   )
 }

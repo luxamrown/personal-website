@@ -48,9 +48,20 @@ a {
   100% {left: 0px;}
 }
 
+@keyframes showing-right {
+  0% {color: transparent;right: 25px; }
+  100% {right: 0px;}
+}
+
 .animation-text{
   position: relative;
   animation-name: showing;
+  animation-duration: 1s;
+}
+
+.animation-text-right{
+  position: relative;
+  animation-name: showing-right;
   animation-duration: 1s;
 }
 
@@ -65,6 +76,32 @@ a {
 
 .content{
   margin-bottom: 91px;
+}
+
+.sub-content{
+  margin-bottom: 45px;
+}
+
+.content-photo{
+  border-right: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  padding-right: 9px;
+  padding-bottom: 9px;
+  transition: 0.4s;
+  margin: 9px;
+}
+
+.content-photo:hover{
+  border-right: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+.portfolio-crossing{
+  margin-top: 250px;
+}
+
+.portfolio-crossing-text{
+  font-size: 45px !important;
 }
 
 .containers{
