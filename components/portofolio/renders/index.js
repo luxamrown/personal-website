@@ -115,7 +115,7 @@ export default function Renders() {
             <Row>
               <Col>
                 <Image 
-                src={'/images/about/renders/POCKET_3.png'}
+                src={'/images/about/renders/POCKET_3.jpg'}
                 alt='render'
                 fluid
                 className='content-photo'
@@ -123,7 +123,7 @@ export default function Renders() {
               </Col>
               <Col>
                 <Image 
-                src={'/images/about/renders/POCKET_2.png'}
+                src={'/images/about/renders/POCKET_2.jpg'}
                 alt='render'
                 fluid
                 className='content-photo'
@@ -133,7 +133,7 @@ export default function Renders() {
             <Row>
               <Col>
                 <Image 
-                src={'/images/about/renders/POCKET_1.png'}
+                src={'/images/about/renders/POCKET_1.jpg'}
                 alt='render'
                 fluid
                 className='content-photo'

@@ -4,7 +4,7 @@ import Layout from '../../../components/layout/'
 
 export default function Render() {
   return (
-    <Layout pageTitle={Renders}>
+    <Layout pageTitle={'Renders'}>
         <Renders/>
     </Layout>
   )
