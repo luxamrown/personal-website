@@ -45,7 +45,7 @@ export const Activities = () =>{
                                 streetWorkout.map((item, idx)=>{
                                     return(
                                         <Carousel.Item key={idx}>
-                                            <Image src={item.img} width={'1024px'} height={'682.5px'} quality={100} alt='activities'/>
+                                            <Image src={item.img} width={'1024px'} height={'682.5px'} alt='activities'/>
                                         </Carousel.Item>
                                     )
                                 })
@@ -61,7 +61,7 @@ export const Activities = () =>{
                                 band.map((item,idx)=>{
                                     return(
                                         <Carousel.Item key={idx}>
-                                            <Image src={item.img} width={'1024px'} height={'682.5px'} quality={100} alt='activities'/>
+                                            <Image src={item.img} width={'1024px'} height={'682.5px'} alt='activities'/>
                                         </Carousel.Item>
                                     )
                                 })

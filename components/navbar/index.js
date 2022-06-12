@@ -1,6 +1,5 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 import Image from "next/image";
-import { useMediaQuery } from "react-responsive";
 import { useRouter } from 'next/router'
 import useDimension from "../../utils";
 
@@ -8,7 +7,6 @@ import useDimension from "../../utils";
 export default function NavPage() {
     const isMobile = useDimension(768)
     const router = useRouter()
-    console.log(`Mobile : ${isMobile}`);
   return (
     <>
         <Navbar bg="white" expand="xl">
