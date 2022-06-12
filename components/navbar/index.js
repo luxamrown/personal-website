@@ -2,6 +2,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import Image from "next/image";
 import { useRouter } from 'next/router'
 import useDimension from "../../utils";
+import Link from 'next/link'
 
 
 export default function NavPage() {
@@ -18,10 +19,18 @@ export default function NavPage() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className={!isMobile?'nav-desktop':''}>
                     <Nav className="m-5 text-center">
-                        <Nav.Link href="/" className={"mx-4 " +(router.pathname === '/'?'nav-text-active':'nav-text')}><h5>Home</h5></Nav.Link>
-                        <Nav.Link href="/about" className={"mx-4 " +(router.pathname === '/about'?'nav-text-active':'nav-text')}><h5>About</h5></Nav.Link>
-                        <Nav.Link href="/portofolio" className={"mx-4 " +(router.pathname === '/portofolio/[type]'?'nav-text-active':'nav-text')}><h5>Portfolio</h5></Nav.Link>
-                        <Nav.Link href="/blog" className={"mx-4 " +(router.pathname === '/blog'?'nav-text-active':'nav-text')}><h5>Blog</h5></Nav.Link>
+                        <Link href="/">
+                            <Nav.Link href="/" className={"mx-4 " +(router.pathname === '/'?'nav-text-active':'nav-text')}><h5>Home</h5></Nav.Link>
+                        </Link>
+                        <Link href="/about">
+                            <Nav.Link href="/about" className={"mx-4 " +(router.pathname === '/about'?'nav-text-active':'nav-text')}><h5>About</h5></Nav.Link>
+                        </Link>
+                        <Link href="/portofolio">
+                            <Nav.Link href="/portofolio" className={"mx-4 " +(router.pathname === '/portofolio/[type]'?'nav-text-active':'nav-text')}><h5>Portfolio</h5></Nav.Link>
+                        </Link>
+                        <Link href="/blog">
+                            <Nav.Link href="/blog" className={"mx-4 " +(router.pathname === '/blog'?'nav-text-active':'nav-text')}><h5>Blog</h5></Nav.Link>
+                        </Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
