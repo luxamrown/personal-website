@@ -15,6 +15,10 @@ export default function Experience() {
               <h6>Software Developer</h6>
             </Row>
             <Row className='my-4'>
+              <h4 className='border-start'>Runes.Asia | 2022 - 2022</h4>
+              <h6>Internship</h6>
+            </Row>
+            <Row className='my-4'>
               <h4 className='border-start'>ARS Production | 2017 - 2019</h4>
               <h6>Founder & 3D Modeler</h6>
             </Row>
