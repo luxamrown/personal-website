@@ -18,7 +18,7 @@ export default function School() {
               <h4 className='border-start'>SMA 6 Jakarta | 2018 - 2021</h4>
               <p>Natural Science</p>
             </Row>
-            <Row className='mt-3 animation-text'>
+            <Row className='mt-3'>
               <VideoSchool/>
               <Activities/>
             </Row>
