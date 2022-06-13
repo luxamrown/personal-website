@@ -1,4 +1,5 @@
-import {Col, Row, Container, Card, Tabs, Tab} from 'react-bootstrap'
+import Image from 'next/image'
+import {Card} from 'react-bootstrap'
 
 export const Etc = () => {
     const etc = [{
@@ -15,7 +16,7 @@ export const Etc = () => {
         etc.map((item, index)=>{
           return(
             <Card key={index} style={{ 'maxWidth': '14rem','padding':'30px', 'borderRadius':'4px', 'boxShadow':'rgba(0, 0, 0, 0.16) 0px 1px 4px'}} className={'mx-2' }>
-              <Card.Img variant="top" src={item.img} width={'100px'} height={'100px'}/>
+                <Image src={item.img} width={'100px'} height={'100px'} alt='etc'/>
               <Card.Body>
                 <Card.Title className='p-2 text-center fs-6'>{item.title}</Card.Title>
               </Card.Body>

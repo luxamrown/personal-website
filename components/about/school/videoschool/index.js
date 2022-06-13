@@ -1,8 +1,24 @@
 import {Col, Row, Container, Tabs, Tab} from 'react-bootstrap'
 import useDimension from '../../../../utils'
+import Image from 'next/image'
+import { useState } from 'react'
 
 export const VideoSchool = () =>{
     const isMobile = useDimension(768)
+  //   const [youtubeGo, setYoutubeGo] = useState(false)
+
+  //   const handleMouseOver = () =>{
+  //       setYoutubeGo(true)
+  //   }
+
+  //   const handleMouseLeave = () =>{
+  //     setYoutubeGo(false)
+  // }
+    
+    const handleClick = () =>{
+      window.open('https://youtu.be/BzaiH2mUduU', '_blank')
+    }
+
     const SynopsisVideo = () =>{
       return(
         <>
@@ -25,14 +41,24 @@ export const VideoSchool = () =>{
       )
     }
 
+    const Thumbnail = () =>{
+      return(
+        <div role={"button"} className='thumbnail' onClick={handleClick}>
+          <div className="thumbnail-photo">
+            <Image src={"/images/about/school/youtube.jpg"} width={"590px"} height={"315px"} alt='youtube'/>
+          </div>
+        </div>
+      )
+    }
+
     return(
       <Container className='my-4'>
-        <Row>
+        <Row className={(isMobile?'d-flex flex-column':'')}>
           <Col className='text-center'>
-            <iframe width={isMobile?"300":"590"} height={isMobile?"200":"315"} src="https://www.youtube.com/embed/BzaiH2mUduU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <Thumbnail/>
           </Col>
           <Col>
-          <h5>Short Movie - Persatuan dan Kesatuan Bangsa</h5>
+          <h5 className='text-center'>Short Movie - Persatuan dan Kesatuan Bangsa</h5>
           <Tabs
               id="controlled-tab-example"
               className="my-3 justify-content-center border-0"

@@ -104,6 +104,25 @@ a {
   font-size: 45px !important;
 }
 
+.thumbnail{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.thumbnail-photo{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+
+.thumbnail-logo{
+  position: absolute;
+  top: 41%;
+  left: 45%;
+}
+
 .containers{
   position: relative;
   margin: 0;
