@@ -29,7 +29,7 @@ export default function NavPage({href}) {
                             <Nav.Link href={href} className={"mx-4 " +(router.pathname === '/portofolio/[type]'?'nav-text-active':'nav-text')}><h5>Portfolio</h5></Nav.Link>
                         </Link>
                         <Link href="/blog" passHref>
-                            <Nav.Link href={href} className={"mx-4 " +(router.pathname === '/blog'?'nav-text-active':'nav-text')}><h5>Blog</h5></Nav.Link>
+                            <Nav.Link href={href} className={"mx-4 " +(router.pathname === '/blog' || router.pathname === '/blog/[id]'?'nav-text-active':'nav-text')}><h5>Blog</h5></Nav.Link>
                         </Link>
                     </Nav>
                 </Navbar.Collapse>

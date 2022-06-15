@@ -130,6 +130,18 @@ a {
   min-height: 100%;
 }
 
+.blog-card{
+  transition: 0.3s;
+}
+
+.blog-card:hover{
+  background-color: rgb(236, 236, 236);
+}
+
+.blog-content{
+  white-space: pre-line;
+}
+
 .footer {
   height: 91px;
   position: absolute;
