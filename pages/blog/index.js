@@ -8,7 +8,7 @@ export default function Blog(props) {
     const {Data} = dataArticle
 
   return (
-    <div>
+    <div className='blog'>
       <Layout pageTitle={"Blog"}>
         <BlogPage data={Data} />
       </Layout>

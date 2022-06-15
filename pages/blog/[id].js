@@ -9,10 +9,13 @@ export default function PostDetail(props) {
     const {id} = router.query
     const {article} = props
 
+
   return (
-    <Layout pageTitle={"Article"}>
-        <ArticleDetails id={id} article={article}/>
-    </Layout>
+    <div className='blog'>
+        <Layout pageTitle={"Article"}>
+            <ArticleDetails id={id} article={article}/>
+        </Layout>
+    </div>
   )
 }
 
