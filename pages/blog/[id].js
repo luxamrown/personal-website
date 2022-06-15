@@ -9,13 +9,12 @@ export default function PostDetail(props) {
     const {id} = router.query
     const {article} = props
 
+    // componentWillMount()
 
   return (
-    <div className='blog'>
-        <Layout pageTitle={"Article"}>
-            <ArticleDetails id={id} article={article}/>
-        </Layout>
-    </div>
+    <Layout pageTitle={"Article"}>
+        <ArticleDetails id={id} article={article}/>
+    </Layout>
   )
 }
 
