@@ -16,7 +16,7 @@ export default function Blog(props) {
   )
 }
 
-export async function getStaticProps(context){
+export async function getServerSideProps(){
     const result = await fetch(process.env.URL_GET_ALL_POST)
     const dataArticle = await result.json()
     return {

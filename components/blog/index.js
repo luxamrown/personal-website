@@ -1,10 +1,7 @@
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 import { Card, Container, Col, Row } from 'react-bootstrap'
 export default function BlogPage(props) {
-    const router = useRouter()
     const article = props.data
-    // <h1 key={item.ArticleId} onClick={() => router.push(`/blog/${item.ArticleId}`)}>{item.Title}</h1>
     return (
     <div className='animation-text'>
                     <>

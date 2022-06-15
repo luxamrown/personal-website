@@ -16,23 +16,7 @@ export default function PostDetail(props) {
   )
 }
 
-export async function getStaticPaths(){
-    const result = await fetch(process.env.URL_GET_ALL_POST)
-    const dataArticle = await result.json()
-    const {Data} = dataArticle
-    
-    const paths = Data.map((item) => ({
-        params:{
-            id:item.ArticleId
-        }
-    }))
-    return {
-        paths,
-        fallback:true
-    }
-}
-
-export async function getStaticProps(context){
+export async function getServerSideProps(context){
     const {id} = context.params
     const result = await fetch(`${process.env.URL_GET_DETAIL_POST}/${id}`)
     const article = await result.json()
