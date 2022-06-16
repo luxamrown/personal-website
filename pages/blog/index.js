@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router'
 import React from 'react'
 import BlogPage from '../../components/blog'
 import Layout from '../../components/layout'

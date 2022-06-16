@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import {Col, Row, Container} from 'react-bootstrap'
+import LoadingComponent from '../../loading'
 
 export default function ArticleDetails(props) {
   // const {article} = props
@@ -16,7 +17,7 @@ export default function ArticleDetails(props) {
         })
     }, [props.id])
 
-  if (isLoading) return <p>Loading...</p>
+  if (isLoading) return(<LoadingComponent/>)
   if(data)
   
   return (

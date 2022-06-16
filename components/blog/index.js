@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import { Card, Container, Col, Row } from 'react-bootstrap'
+import { Card, Container, Col, Row, Placeholder } from 'react-bootstrap'
+import LoadingComponent from '../loading'
 
 export default function BlogPage() {
     const [data, setData] = useState(null)
@@ -17,7 +18,11 @@ export default function BlogPage() {
           })
       }, [])
 
-    if (isLoading) return <p>Loading...</p>
+    if (isLoading) return (
+        <>
+            <LoadingComponent/>
+        </>
+    )
     if(data)
     return (
     <div className='animation-text'>
