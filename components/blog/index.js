@@ -1,7 +1,24 @@
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
 import { Card, Container, Col, Row } from 'react-bootstrap'
-export default function BlogPage(props) {
-    const article = props.data
+
+export default function BlogPage() {
+    const [data, setData] = useState(null)
+    const [isLoading, setLoading] = useState(false)
+
+    useEffect(() => {
+        setLoading(true)
+        fetch(process.env.URL_GET_ALL_POST)
+          .then((res) => res.json())
+          .then((resData) => {
+            const {Data} = resData
+            setData(Data)
+            setLoading(false)
+          })
+      }, [])
+
+    if (isLoading) return <p>Loading...</p>
+    if(data)
     return (
     <div className='animation-text'>
                     <>
@@ -14,7 +31,7 @@ export default function BlogPage(props) {
                             <Col>
                             <Row>
                             {
-                            article.map((item)=>{
+                            data.map((item)=>{
                                 return(
                                             <Link
                                             key={item.ArticleId}
