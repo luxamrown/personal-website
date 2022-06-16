@@ -11,7 +11,11 @@ export const Framework = () => {
     },{
       title:'Bootstrap',
       img:'/images/about/programming/bootstrap-logo-vector.svg'
+    },{
+      title:'Gin Gonic',
+      img:'/images/about/programming/gin.svg'
     }]
+    
     return(
       <div className='d-flex flex-wrap justify-content-center'>
         {
