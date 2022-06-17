@@ -19,7 +19,7 @@ export default function Experience() {
               <h6>Internship</h6>
             </Row>
             <Row className='my-4'>
-              <h4 className='border-start'>ARS Production | 2017 - 2019</h4>
+              <h4 className='border-start'>ARS Trainz Production | 2017 - 2019</h4>
               <h6>Founder & 3D Modeler</h6>
             </Row>
           </Col>
