@@ -9,6 +9,10 @@ export const Language = () =>{
       title:'Javascript',
       img:'/images/about/programming/Unofficial_JavaScript_logo_2.svg'
     },{
+      title:'Typescript',
+      img:'/images/about/programming/typescript.svg'
+
+    },{
       title:'Python',
       img:'/images/about/programming/python-seeklogo.com.svg'
     }

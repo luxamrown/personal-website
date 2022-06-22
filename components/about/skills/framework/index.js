@@ -9,11 +9,14 @@ export const Framework = () => {
       title:'NextJS',
       img:'/images/about/programming/Nextjs-logo.svg'
     },{
+      title:'Gin Gonic',
+      img:'/images/about/programming/gin.svg'
+    },{
       title:'Bootstrap',
       img:'/images/about/programming/bootstrap-logo-vector.svg'
     },{
-      title:'Gin Gonic',
-      img:'/images/about/programming/gin.svg'
+      title:'Tailwind',
+      img:'/images/about/programming/Tailwind_CSS_Logo.svg'
     }]
     
     return(
