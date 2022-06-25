@@ -48,7 +48,7 @@ export default function BlogPage() {
                                                         <Card.Body className='p-4'>
                                                             <Card.Title as="h3">{item.Title}</Card.Title>
                                                             <Card.Text className='text-secondary'>
-                                                            {item.Desc}
+                                                            {item.Desc.substring(0, 119)}
                                                             </Card.Text>
                                                             <Card.Text as='h6' className='border-bottom d-inline p-1'>
                                                             {item.Date}
