@@ -14,10 +14,10 @@ export default function HomeContent() {
     </Head>
         <Container className='my-5'>
             <Row>
-                <Col lg className='animation-text-right'>
+                <Col lg className='animation-text-right text-center'>
                     <Image 
                     src={"/images/avatar.png"} 
-                    width="1622px" height="1574px"
+                    width="555px" height="543px"
                     alt='avatar' quality={100} 
                     className={"border rounded-circle"} 
                     />
