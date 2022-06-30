@@ -16,10 +16,10 @@ export default function HomeContent() {
             <Row>
                 <Col lg className='animation-text-right'>
                     <Image 
-                    src={"/images/avatar-noshadow.png"} 
-                    width="462px" height={"509px"} 
+                    src={"/images/avatar.png"} 
+                    width="1622px" height="1574px"
                     alt='avatar' quality={100} 
-                    className={"border-bottom "} 
+                    className={"border rounded-circle"} 
                     />
                 </Col>
                 <Col lg>
